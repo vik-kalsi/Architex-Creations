@@ -13,13 +13,17 @@ function PageLayout() {
     setShowMobileMenu(!showMobileMenu)
   }
 
+  const hideMobileMenu = () => {
+    setShowMobileMenu(false)
+  }
+
   return (
     <>
       <div className='grid justify-center py-6 space-y-8'>
         
         <div className='w-screen flex justify-between px-8'>
           <div>
-            <h1 className='font-bold md:text-lg'>Architex Creations</h1>
+            <NavLink to="/Architex-Creations/" className={"font-bold md:text-lg lg:text-xl"} onClick={hideMobileMenu}>Architex Creations</NavLink>
           </div>
             
           <div>
@@ -33,7 +37,7 @@ function PageLayout() {
       
       
           <header className='hidden lg:block'>
-            <nav className='space-x-10'>
+            <nav className='space-x-10 font-bold text-xl'>
               <NavLink to="/Architex-Creations/">Home</NavLink>
               <NavLink to="about">About</NavLink>
               <NavLink to="faq">FAQ</NavLink>
