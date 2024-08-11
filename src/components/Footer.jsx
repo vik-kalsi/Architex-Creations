@@ -1,44 +1,30 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
+
 
 function Footer() {
   return (
-    <ul className="menu xl:menu-horizontal bg-base-200 rounded-box lg:min-w-max">
+    <ul className="menu xl:menu-horizontal bg-base-200 rounded-box lg:min-w-max border-2">
         <li>
-            <a>Solutions</a>
+            <a className='underline underline-offset-4'>Solutions</a>
             <ul>
-            <li><a>Design</a></li>
-            <li><a>Development</a></li>
-            <li><a>Hosting</a></li>
-            <li><a>Domain register</a></li>
+                <li><a>Design</a></li>
             </ul>
         </li>
 
         <li>
-            <a>Enterprise</a>
+            <a className='underline underline-offset-4'>Products</a>
             <ul>
-            <li><a>CRM software</a></li>
-            <li><a>Marketing management</a></li>
-            <li><a>Security</a></li>
-            <li><a>Consulting</a></li>
-            </ul>
-        </li>
-
-        <li>
-            <a>Products</a>
-            <ul>
-            <li><a>UI Kit</a></li>
-            <li><a>Wordpress themes</a></li>
-            <li><a>Wordpress plugins</a></li>
+                <li><a>UI Kit</a></li>
             </ul>
         </li>
         
         <li>
-            <a>Company</a>
+            <a className='underline underline-offset-4'>Company</a>
             <ul>
-            <li><a>About us</a></li>
-            <li><a>Contact us</a></li>
-            <li><a>Privacy policy</a></li>
-            <li><a>Press kit</a></li>
+                <li><NavLink to="about">About</NavLink></li>
+                <li><NavLink to="faq">FAQ</NavLink></li>
+                <li><NavLink to="contact">Contact</NavLink></li>
             </ul>
         </li>
     </ul>
