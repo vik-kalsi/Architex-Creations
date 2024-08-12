@@ -5,15 +5,16 @@ function Contact() {
     <>
       <label className="input input-bordered flex items-center gap-2">
         Name
-        <input type="text" className="grow" placeholder="Enter your full name" />
+        <input id='fullName' type="text" className="grow" placeholder="Enter your full name" />
       </label>
 
       <label className="input input-bordered flex items-center gap-2">
         Email
-        <input type="text" className="grow" placeholder="Email Address" />
+        <input id='email' type="text" className="grow" placeholder="Email Address" />
       </label>
 
       <textarea
+        id='message'
         placeholder="Enter Message"
         className="textarea textarea-bordered textarea-sm w-full max-w-xs">
       </textarea>

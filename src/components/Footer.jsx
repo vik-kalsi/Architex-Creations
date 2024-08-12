@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 
 function Footer() {
   return (
-    <ul className="menu xl:menu-horizontal bg-base-200 rounded-box lg:min-w-max border-2">
+    <ul className="menu xl:menu-horizontal bg-base-200 rounded-box lg:min-w-max border-2 border-[#dca54c] lg:mt-32">
         <li>
             <a className='underline underline-offset-4'>Solutions</a>
             <ul>
@@ -15,7 +15,7 @@ function Footer() {
         <li>
             <a className='underline underline-offset-4'>Products</a>
             <ul>
-                <li><a>UI Kit</a></li>
+                <li><a>Products</a></li>
             </ul>
         </li>
         
